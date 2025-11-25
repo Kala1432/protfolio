@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niraj Kumar Thakur — Portfolio</title>
+  <meta name="description" content="Portfolio of Niraj Kumar Thakur — Software Engineer | Backend Developer | Data Analyst" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071023 0%, #071827 60%)}
+    .container{max-width:1100px;margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:112px;height:112px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#021022;font-weight:800;font-size:28px}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+    .actions{margin-left:auto;display:flex;gap:10px}
+    a.btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021022}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+
+    nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02)}
+    .section-title{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    ul.clean{list-style:none;padding:0;margin:0}
+    li.project{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+    .skill-badge{display:inline-block;padding:6px 8px;margin:6px 6px 0 0;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:600}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* responsive */
+    @media (max-width:980px){.grid{grid-template-columns:1fr} .actions{width:100%;justify-content:space-between}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" style="padding:0;background:none"><img src="nir.jpeg" alt="Niraj Kumar Thakur" style="width:112px;height:112px;border-radius:14px;object-fit:cover;" /></div>
+      <div>
+        <h1>Niraj Kumar Thakur</h1>
+        <div class="sub">Software Engineer · Backend Developer · Data Analyst</div>
+        <div class="sub">Bangalore, Karnataka · +91 8123364382 · <a href="mailto:nirajkumarthakur1432@gmail.com">nirajkumarthakur1432@gmail.com</a></div>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="Niraj Kumar Thakur_Inter_resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn btn-ghost" href="https://github.com/Kala1432" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/mrthakur1432" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </header>
+
+    <nav>
+      <span class="pill">Spring Boot</span>
+      <span class="pill">Django</span>
+      <span class="pill">MySQL</span>
+      <span class="pill">Firebase</span>
+      <span class="pill">Microservices</span>
+      <span class="pill">Thymeleaf</span>
+      <span class="pill">Docker</span>
+    </nav>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title"><h3 style="margin:0">About</h3></div>
+          <p style="color:var(--muted);line-height:1.6">I am a backend-focused Software Engineer with strong foundations in data structures & algorithms, OS, DBMS and Computer Networks. I build resilient Spring Boot and Django services, design microservice architectures, and integrate real-time features with Firebase & Google Cloud. I enjoy solving problems end-to-end — from schema design to deployment.</p>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3 style="margin:0">Selected Projects</h3></div>
+          <ul class="clean">
+            <li class="project">
+              <strong>Food Donation Platform</strong>
+              <div class="sub">Spring Boot · MySQL · Thymeleaf</div>
+              <div style="color:var(--muted);margin-top:6px">Built a platform connecting 50+ donors and NGOs, reducing food distribution delays by 30% and cutting manual tracking time by 40%.</div>
+            </li>
+
+            <li class="project">
+              <strong>Crime Detection System</strong>
+              <div class="sub">Spring Boot · Django · MySQL · Firebase</div>
+              <div style="color:var(--muted);margin-top:6px">Real-time incident reporting dashboards — reduced processing time by 60%, supported 500+ users.</div>
+            </li>
+
+            <li class="project">
+              <strong>Neighbourhood Watch App</strong>
+              <div class="sub">Spring Boot · Firebase · MySQL · Thymeleaf</div>
+              <div style="color:var(--muted);margin-top:6px">Deployed OTP login & AI moderation; 1,000+ sign-ups and 70% reduction in spam reports.</div>
+            </li>
+
+            <li class="project">
+              <strong>Hotel Rating System</strong>
+              <div class="sub">Spring Boot Microservices · MySQL · Postman</div>
+              <div style="color:var(--muted);margin-top:6px">Microservices architecture with extensive API testing; scaled to 10,000+ requests with 100% API reliability in tests.</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3 style="margin:0">Achievements</h3></div>
+          <ul class="clean">
+            <li style="color:var(--muted);padding:6px 0">Smart India Hackathon 2024 — Top 10 (out of 200+ teams)</li>
+            <li style="color:var(--muted);padding:6px 0">Top Performance Award for academic project leadership</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3 style="margin:0">Contact</h3></div>
+          <p style="color:var(--muted)">For collaborations, interviews or freelance work — email me at <a href="mailto:nirajkumarthakur1432@gmail.com">nirajkumarthakur1432@gmail.com</a> or call +91 8123364382.</p>
+          <form onsubmit="alert('Form demo — this site is static. Replace with real backend or mailto.') ; return false;" style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+            <input placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6" />
+            <input placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6" />
+            <textarea placeholder="Message" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef6"></textarea>
+            <button class="btn btn-primary" type="submit" style="align-self:flex-start">Send</button>
+          </form>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h4 style="margin:0">Skills</h4></div>
+          <div style="margin-top:8px">
+            <span class="skill-badge">Spring Boot</span>
+            <span class="skill-badge">Django</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">Firebase</span>
+            <span class="skill-badge">Microservices</span>
+            <span class="skill-badge">Thymeleaf</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">Python</span>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h4 style="margin:0">Education</h4></div>
+            <div style="color:var(--muted)">B.E., Computer Science & Engineering — CMR Institute of Technology (CGPA: 8.6 expected 2027)</div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title"><h4 style="margin:0">Online Certs</h4></div>
+            <div style="color:var(--muted)">Spring Boot (Udemy), Django (Udemy)</div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h4 style="margin:0">Personal</h4></div>
+          <div style="color:var(--muted);line-height:1.6">
+            DOB: 24 July 2004<br />
+            Nationality: Nepal<br />
+            Languages: English, Hindi, Nepali, Maithili<br />
+            Hobbies: Playing video games
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ · Designed for clarity — Niraj Kumar Thakur
+    </footer>
+  </div>
+
+  <script>
+    // small enhancement: show smooth scrolling for nav anchor (if added later)
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+</body>
+</html>
